@@ -6,59 +6,58 @@
 
     //  Question  1
 
-    // var a= 10;
+    var a= 10;
 
-    // document.write("the value of a is " + a);
-    // document.write("the value of ++a is " + ++a);
-    // document.write("now the value of a is " + a);
+    document.write("the value of a is " + a);
+    document.write("the value of ++a is " + ++a);
+    document.write("now the value of a is " + a);
 
-    // document.write("the value of a is " + a++);
-    // a=a++;
-    // document.write("now the value of a is " + a++);
-    // a=--a;
-    // document.write("the value of a is " + --a);
-    // document.write(" now the value of a is " + a);
-    // document.write("the value of a is " + a--);
-    // a= a--;
-    // document.write("the value of a is " + a--);
+    document.write("the value of a is " + a++);
+    a=a++;
+    document.write("now the value of a is " + a++);
+    a=--a;
+    document.write("the value of a is " + --a);
+    document.write(" now the value of a is " + a);
+    document.write("the value of a is " + a--);
+    a= a--;
+    document.write("the value of a is " + a--);
 
          // Question  2
 
-//   var a = 2, b = 1;
-// var result = --a - --b + ++b + b--;
+  var a = 2, b = 1;
+var result = --a - --b + ++b + b--;
 
-// document.write("a is "+ a + "<br>");
-// document.write("b is "+ b + "<br>");
-// document.write("result = "+ result + "<br>");
+document.write("a is "+ a + "<br>");
+document.write("b is "+ b + "<br>");
+document.write("result = "+ result + "<br>");
 
-// document.write("a  =" +--a + "<br>");
-// document.write(--a - --b + "<br>");
-// document.write(--a - --b + ++b + "<br>");
-// document.write(--a - --b + ++b  + b-- + "<br>");
+document.write("a  =" +--a + "<br>");
+document.write(--a - --b + "<br>");
+document.write(--a - --b + ++b + "<br>");
+document.write(--a - --b + ++b  + b-- + "<br>");
 
          // Question  3
 
-    // var username= (prompt("enter your name"));
+    var username= (prompt("enter your name"));
 
-    // alert("welcome " + username);
+    alert("welcome " + username);
 
 
              // Question  4
 
-  // var userInput = prompt("Enter a number (default is 5):");
+  var userInput = prompt("Enter a number (default is 5):");
 
-  // var number = parseInt(userInput);
+  var number = parseInt(userInput);
 
-  // if (isNaN(number) || number <= 0) {
-  //   number = 5;
-  //   document.write("<p>No valid input provided. Using default number: 5</p>");
-  // }
+  if (isNaN(number) || number <= 0) {
+    number = 5;
+    document.write("<p>No valid input provided. Using default number: 5</p>");
+  }
 
-  // // Generate and display the multiplication table
-  // document.write("<h3>Table for " + number + "</h3>");
-  // for (var i = 1; i <= 10; i++) {
-  //   document.write(number + " × " + i + " = " + (number * i) + "<br>");
-  // }
+  document.write("<h3>Table for " + number + "</h3>");
+  for (var i = 1; i <= 10; i++) {
+    document.write(number + " × " + i + " = " + (number * i) + "<br>");
+  }
 
              // Question  5
 
@@ -85,4 +84,6 @@
   document.write("<p>Total Marks Obtained: " + totalObtainedMarks + "</p>");
   document.write("<p>Percentage: " + percentage.toFixed(2) + "%</p>");
 
+   
+////   =====================  CHAPTER NO 06 END    ==================================== ///
 
