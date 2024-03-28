@@ -12,15 +12,11 @@
 
 
 
-// Prompt the user to enter a city name
 var cityName = prompt("Enter the name of your city:");
 
-// Check if the entered city name is "Karachi"
 if (cityName.toLowerCase() === "karachi") {
-    // If the city name is "Karachi", display the welcome message
     alert("Welcome to the city of lights!");
 } else {
-    // If the city name is not "Karachi", display a generic message
     alert("Welcome!");
 }
 
@@ -33,13 +29,10 @@ if (cityName.toLowerCase() === "karachi") {
 //      =================  ANSWER   ===============
 
 
-// Prompt the user to enter their gender
 var gender = prompt("Enter your gender (male or female):");
 
-// Convert the gender input to lowercase for case-insensitive comparison
 gender = gender.toLowerCase();
 
-// Check the gender input and display the appropriate greeting
 if (gender === "male") {
     alert("Good Morning Sir.");
 } else if (gender === "female") {
@@ -56,13 +49,10 @@ if (gender === "male") {
 
 //      =================  ANSWER   ===============
 
-// Prompt the user to enter the color of the road traffic signal
 var color = prompt("Enter the color of the road traffic signal (red, yellow, or green):");
 
-// Convert the color input to lowercase for case-insensitive comparison
 color = color.toLowerCase();
 
-// Check the color input and display the appropriate message
 switch (color) {
     case "red":
         alert("Must Stop");
@@ -86,10 +76,8 @@ switch (color) {
     
 //      =================  ANSWER   ===============
 
-// Prompt the user to enter the remaining fuel in the car (in liters)
 var remainingFuel = parseFloat(prompt("Enter the remaining fuel in your car (in liters):"));
 
-// Check if the remaining fuel is less than 0.25 liters
 if (remainingFuel < 0.25) {
     alert("Please refill the fuel in your car.");
 } else {
@@ -143,14 +131,13 @@ var a = 4;
 if (++a === 5){
     alert("given condition for variable a is true");
 }
-// Output: "given condition for variable a is true"
 
 // b.
 var b = 82;
 if (b++ === 83){
     alert("given condition for variable b is true");
 }
-// Output: (No alert displayed)
+else("given condition for variable b is false");
 
 // c.
 var c = 12;
@@ -166,9 +153,6 @@ if (++c < 14){
 if(c === 14){
     alert("condition 4 is true");
 }
-// Output: "condition 2 is true"
-//         "condition 4 is true"
-
 // d.
 var materialCost = 20000;
 var laborCost = 2000;
@@ -176,7 +160,6 @@ var totalCost = materialCost + laborCost;
 if (totalCost === laborCost + materialCost){
     alert("The cost equals");
 }
-// Output: "The cost equals"
 
 // e.
 if (true){
@@ -185,13 +168,11 @@ if (true){
 if (false){
     alert("False");
 }
-// Output: "True"
 
 // f.
 if("car" < "cat"){
     alert("car is smaller than cat");
 }
-// Output: "car is smaller than cat"
 
 
 // Question 6
@@ -205,19 +186,15 @@ if("car" < "cat"){
 //      =================  ANSWER   ===============
 
 
-  // Prompt the user to enter marks obtained in three subjects and total marks
   var subject1Marks = parseInt(prompt("Enter marks obtained in subject 1:"));
   var subject2Marks = parseInt(prompt("Enter marks obtained in subject 2:"));
   var subject3Marks = parseInt(prompt("Enter marks obtained in subject 3:"));
   var totalMarks = parseInt(prompt("Enter total marks:"));
 
-  // Calculate total obtained marks
   var totalObtainedMarks = subject1Marks + subject2Marks + subject3Marks;
 
-  // Calculate percentage
   var percentage = (totalObtainedMarks / totalMarks) * 100;
 
-  // Calculate grade
   var grade;
   if (percentage >= 80) {
     grade = "A";
@@ -231,7 +208,6 @@ if("car" < "cat"){
     grade = "F";
   }
 
-  // Determine remarks
   var remarks;
   if (grade === "F") {
     remarks = "You need to improve";
@@ -239,7 +215,6 @@ if("car" < "cat"){
     remarks = "Keep up the good work!";
   }
 
-  // Display the result on the page
   document.write("<p>Total marks: " + totalMarks + "</p>");
   document.write("<p>Obtained marks: " + totalObtainedMarks + "</p>");
   document.write("<p>Percentage: " + percentage.toFixed(2) + "%</p>");
@@ -260,21 +235,15 @@ if("car" < "cat"){
 //      =================  ANSWER   ===============
 
 
-// Store the secret number (ranging from 1 to 10) in a variable
 var secretNumber = Math.floor(Math.random() * 10) + 1;
 
-// Prompt the user to guess the secret number
 var userGuess = parseInt(prompt("Guess the secret number (from 1 to 10):"));
 
-// Check if the user's guess matches the secret number
 if (userGuess === secretNumber) {
-    // If user guesses the same number, show "Bingo! Correct answer"
     alert("Bingo! Correct answer");
 } else if (userGuess + 1 === secretNumber || userGuess - 1 === secretNumber) {
-    // If the guessed number +1 or -1 is the secret number, show "Close enough to the correct answer"
     alert("Close enough to the correct answer");
 } else {
-    // If the user's guess is incorrect, display a message indicating the correct answer
     alert("Sorry, the correct answer was " + secretNumber);
 }
 
@@ -286,15 +255,11 @@ if (userGuess === secretNumber) {
 
 //      =================  ANSWER   ===============
 
-// Prompt the user to enter a number
 var number = parseInt(prompt("Enter a number:"));
 
-// Check if the number is divisible by 3
 if (number % 3 === 0) {
-    // If the number is divisible by 3, display a message
     alert("The number " + number + " is divisible by 3.");
 } else {
-    // If the number is not divisible by 3, display a message
     alert("The number " + number + " is not divisible by 3.");
 }
 
@@ -305,15 +270,11 @@ if (number % 3 === 0) {
 //      =================  ANSWER   ===============
 
 
-// Prompt the user to enter a number
 var number = parseInt(prompt("Enter a number:"));
 
-// Check if the number is even or odd
 if (number % 2 === 0) {
-    // If the number is divisible by 2 with no remainder, it's even
     alert("The number " + number + " is an even number.");
 } else {
-    // If the number is not divisible by 2 with no remainder, it's odd
     alert("The number " + number + " is an odd number.");
 }
 
@@ -330,10 +291,8 @@ if (number % 2 === 0) {
 
 //      =================  ANSWER   ===============
 
-// Prompt the user to enter the temperature
 var temperature = parseInt(prompt("Enter the temperature:"));
 
-// Check the temperature and display a message based on the criteria
 if (temperature > 40) {
     alert("It is too hot outside.");
 } else if (temperature > 30) {
@@ -359,19 +318,11 @@ if (temperature > 40) {
 //      =================  ANSWER   ===============
 
 
-// Prompt the user to enter the first number
 var firstNumber = parseFloat(prompt("Enter the first number:"));
-
-// Prompt the user to enter the second number
 var secondNumber = parseFloat(prompt("Enter the second number:"));
-
-// Prompt the user to enter the operation (+, -, *, /, %)
 var operation = prompt("Enter the operation (+, -, *, /, %):");
-
-// Declare a variable to store the result
 var result;
 
-// Check the operation and perform the corresponding calculation
 if (operation === "+") {
     result = firstNumber + secondNumber;
 } else if (operation === "-") {
@@ -390,7 +341,6 @@ if (operation === "+") {
     alert("Invalid operation. Please enter one of the following: +, -, *, /, %");
 }
 
-// Display the result to the user
 if (result !== undefined) {
     alert("The result of " + firstNumber + " " + operation + " " + secondNumber + " is: " + result);
 }
